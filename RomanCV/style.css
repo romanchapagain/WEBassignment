@@ -1,0 +1,169 @@
+body{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'fantasy;', serif; /*font is given here*/
+	background: #8C9193;
+	color: white;
+	}
+
+header{
+		background: white  ;
+		top: 0px;
+		width: 100%;
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 9px 15px 18px -4px #4D4B4F ;
+	}
+
+.webpageLogo{
+  margin: 0%;
+  padding: 1%;
+}
+
+.cvContainer{
+	text-align: center;
+}
+
+
+	nav ul{
+		list-style: none;
+		display: flex;
+		justify-content:space-around;			
+		}
+
+		nav>ul>li{
+			margin-right: 30px;
+			padding: 1%;
+			border-bottom: 1px solid #000;
+			 float: left;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+		}
+
+		a{
+			text-decoration: none;
+			color: #598391;
+		}
+
+		
+
+		li:hover{
+			box-shadow:  -2px 2px 9px blue;
+			
+		}
+		li>a{
+			width: 100%;
+			font-size: 20px;
+			
+		}
+
+		li>a:hover{
+			
+			text-align: center;
+			cursor: pointer;
+			padding: 2%;
+			transition: 0.5s;
+		}
+		li>a:active{
+			color: #980820;
+			background: red;
+		}
+/* Adding acive color to selected page */
+header a.active {
+  background-color: #54495C ;
+  color: white;
+
+
+}
+
+		section{
+			margin: 9% 22% 0 6%;	
+			}
+		
+.bioContent{
+	color: black;
+	background: hsla(10, 2%, 99%, 0.73);
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 19px;
+	
+	
+}
+
+.displayImg{
+display: flex;
+	margin-right:129px;
+	float: none;
+}
+	.welcome{
+			font-family: Arial;
+	text-align: center;
+			font-size: 30px;
+		
+text-decoration-color: blanchedalmond;
+ 
+  opacity: 0.5;
+  	
+	}	
+
+
+.column { /*using column to display different contents according to table.*/
+  width: 41%;
+  padding: 20px;
+  height: 492px; 
+   float: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contactDetails{
+	 text-decoration: none;
+  font-size: 18px;
+  color: blue;
+}
+
+.submitBtn{
+	color: green;
+}
+
+.portfoioDetails{
+	
+  width: 100%;
+}
+
+footer{
+		background-color: #3A3D3D;
+		width: 100%;
+		text-align: center;
+     margin-top: 50px;
+		position: relative;
+		padding-bottom: 10px;
+
+	}
+
+
+
+
+/*Making Responsive*/
+@media screen and (max-width: 800px){
+		body{
+			width: 100%;
+		}
+
+		header{
+			position: relative;
+			display: grid;
+			flex-direction: row;
+			
+		}
+	nav ul{
+		display: grid;		
+		}
+	}
+	

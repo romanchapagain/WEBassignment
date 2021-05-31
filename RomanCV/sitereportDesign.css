@@ -1,0 +1,88 @@
+body{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;	
+	}
+
+header{
+		top: 0px;
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 9px 5px 8px -0px #4D4B4F ;
+	}
+.reportHeading{
+	text-align: center;
+	font-size: 39px;
+}
+.webpageLogo{
+  margin: 0%;
+  padding: 1%;
+}
+	nav ul{
+		list-style: none;
+		display: flex;
+		justify-content:space-around;			
+		}
+
+		nav>ul>li{
+			margin-right: 30px;
+			padding: 1%;
+			border-bottom: 1px solid #000;
+			 float: left;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+		}
+
+		a{
+			text-decoration: none;
+			color: #598391;
+		}
+
+		
+
+		nav>li:hover{
+			box-shadow:  -2px 2px 9px blue;
+			
+		}
+		a{
+			width: 100%;
+			font-size: 20px;		
+		}
+
+		
+		
+/* Adding acive color to selected page */
+header a.active {
+  background-color: #54495C ;
+  color: white;
+}
+
+section{
+	padding-left: 180px;
+	padding-right: 180px;
+}
+
+
+/*Making Responsive*/
+@media screen and (max-width: 800px){
+		body{
+			width: 100%;
+		}
+
+		header{
+			position: relative;
+			display: grid;
+			flex-direction: row;
+			
+		}
+
+nav ul{
+		display: grid;		
+		}
+		
+}
+
+
